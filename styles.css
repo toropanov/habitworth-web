@@ -14,3 +14,15 @@
 .trust-row { margin-top:37px; }
 .marquee { bottom:0; transform:rotate(-2deg); }
 .availability { display:inline-block; margin:37px 0 0; background:var(--ink); color:#fff; border-radius:10px; padding:15px 19px; font-family:"DM Mono",monospace; font-size:12px; }
+.hero { overflow:visible; }
+.marquee { bottom:-25px; z-index:4; }
+.steps { position:relative; z-index:1; }
+.final-cta { overflow:hidden; }
+.final-layout { position:relative; min-height:500px; display:flex; align-items:center; }
+.final-copy { position:relative; z-index:1; }
+.launch-art { position:absolute; right:-185px; bottom:-110px; width:min(63%,760px); transform:rotate(-3deg); }
+.launch-art img { display:block; width:100%; border-radius:42px; box-shadow:0 24px 46px rgba(89,60,0,.22); }
+.footer-links { display:flex; align-items:center; gap:20px; font-size:11px; }
+.footer-links a { color:var(--ink); border-bottom:1px solid #bdb8b1; padding-bottom:3px; }
+.footer-links a:hover { border-color:var(--ink); }
+@media (max-width:760px) { .marquee { bottom:-18px; }.final-layout { min-height:640px; align-items:flex-start; padding-top:85px; }.launch-art { width:128%; right:-66%; bottom:-56px; }.footer-links { align-items:flex-start; flex-direction:column; gap:8px; } }
