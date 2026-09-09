@@ -26,3 +26,6 @@
 .footer-links a { color:var(--ink); border-bottom:1px solid #bdb8b1; padding-bottom:3px; }
 .footer-links a:hover { border-color:var(--ink); }
 @media (max-width:760px) { .marquee { bottom:-18px; }.final-layout { min-height:640px; align-items:flex-start; padding-top:85px; }.launch-art { width:128%; right:-66%; bottom:-56px; }.footer-links { align-items:flex-start; flex-direction:column; gap:8px; } }
+
+.hero h1 .hero-accent-line { display:inline-block; font-size:.76em; white-space:nowrap; }
+.hero h1 strong { font-size:inherit; }
