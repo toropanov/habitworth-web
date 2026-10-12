@@ -13,13 +13,19 @@
 .nav-download:hover { color:#fff; border-color:#fff; }
 .nav-download-disabled { color:#b6b1a8; border-color:#575349; cursor:default; }
 .nav-download-disabled:hover { color:#b6b1a8; border-color:#575349; }
+.button-rustore { position:relative; padding-left:50px; color:#fff; background:#0877f9; border:1px solid #50a2ff; box-shadow:0 8px 18px rgba(0,72,184,.34); font-family:Manrope,Arial,sans-serif; font-weight:800; letter-spacing:-.2px; }
+.button-rustore::before { content:""; position:absolute; left:18px; top:50%; width:20px; height:18px; transform:translateY(-50%); background:linear-gradient(#fff 0 0) 0 6px/12px 12px no-repeat,linear-gradient(#fff 0 0) 4px 3px/12px 12px no-repeat,linear-gradient(#fff 0 0) 8px 0/12px 12px no-repeat; border-radius:2px; }
+.button-rustore:hover { background:#0877f9; }
+.button-google-play { position:relative; padding-left:49px; color:#202124; background:#fff; border:1px solid rgba(255,255,255,.8); box-shadow:0 8px 18px rgba(0,0,0,.2); }
+.button-google-play::before { content:""; position:absolute; left:18px; top:50%; width:19px; height:21px; transform:translateY(-50%); clip-path:polygon(0 0,100% 50%,0 100%); background:conic-gradient(from 210deg at 10% 50%,#00a0ff 0 25%,#00d084 25% 48%,#ffe000 48% 69%,#ff3d4a 69% 100%); filter:drop-shadow(0 1px 1px rgba(0,0,0,.15)); }
+.button-google-play:hover { background:#fff; }
 .brand-icon { width:36px; height:36px; display:block; flex:none; }
 .store-note { color:#a9a59d; font-family:"DM Mono",monospace; font-size:11px; margin:16px 0 0; }
 .trust-row { margin-top:37px; }
 .marquee { bottom:0; transform:rotate(-2deg); }
 .button-disabled { cursor:default; opacity:.52; }
 .button-disabled:hover { transform:none; }
-.final-followup { margin:20px 0 0; color:#eca500; font-size:clamp(28px,3.3vw,46px); font-weight:800; letter-spacing:-2px; line-height:1; }.coming-soon { display:inline-flex; margin-top:32px; padding:9px 14px; border:1px solid rgba(27,26,23,.35); border-radius:999px; color:var(--ink); font-family:"DM Mono",monospace; font-size:11px; letter-spacing:.9px; }
+.final-followup { margin:20px 0 0; color:#eca500; font-size:clamp(28px,3.3vw,46px); font-weight:800; letter-spacing:-2px; line-height:1; }.final-store-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
 .section h2 strong { color:#a96700; }.promo-showcase h2 strong,.privacy h2 strong { color:var(--amber); }.final-cta h2 strong { color:#8b5a00; }
 .hero { overflow:visible; }
 .marquee { bottom:-25px; z-index:4; }
@@ -56,6 +62,7 @@
   .hero { min-height:0; padding-bottom:38px; }
   .hero-copy { padding-top:44px; }
   .hero h1 { font-size:clamp(48px,15vw,58px); }
+  .hero-actions { flex-wrap:wrap; }
   .lead { margin:22px 0; line-height:1.5; }
   .store-note { margin-top:13px; }
   .trust-row { margin-top:28px; }
